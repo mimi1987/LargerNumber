@@ -12,10 +12,14 @@ Module Program
         Number2 = Console.ReadLine()
 
         'Output the larger number
-        If Number2 > Number1 Then
-            Console.WriteLine("SECOND")
+        If Number2 = Number1 Then
+            Console.WriteLine("SAME")
         Else
-            Console.WriteLine("FIRST")
+            If Number2 > Number1 Then
+                Console.WriteLine("SECOND")
+            Else
+                Console.WriteLine("FIRST")
+            End If
         End If
 
         'Keep console window open
